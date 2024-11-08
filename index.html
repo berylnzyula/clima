@@ -4,23 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clima Weather App</title>
+  <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    
 </head>
 <body>
   <section>
   <header> 
-     <h1>Welcome to Clima!</h1>
+     <h1 class="main-title">Welcome to Clima! </h1>
     <form >
-      <input type="search" id="search-box" placeholder="Enter a city">
-      <input type="submit" value="Search">
+      <input type="search" id="search-box" placeholder="Enter a city" required>
+      <input type="submit" value="Search" id="search-button">
     </form>
   </header>
 <main>
-  <h2>Nairobi</h2>
-  <div class="temperature-now"><span id="temp-value">20</span>°C <span id="temp-icon">☀</span></div>
-  <p>Humidity: <span id="humidity">100</span> mmHg Wind Speed: <span id="wind-speed">4 </span>kph </p>
+  <h1 class="city-name">Nairobi</h1>
+  <div class="weather-info"><span id="temp-icon">☀       </span><span id="temp-value">20</span><span id="temp-unit">°C</span> </div>
+  <p>  <span class="humidity">Humidity:</span> <span id="humidity-value">40</span> % <span class="wind-speed">Wind Speed:</span> <span id="wind-speed-value">4 </span>kph 
+  </p>
 </main>
 <footer>
   This project was coded by <a href="https://github.com/berylnzyula" target="_blank">Beryl Nzyula</a> and is open-sourced on <a href="https://github.com/berylnzyula/clima" target="_blank" >GitHub</a> and hosted on <a href="https://app.netlify.com/teams/berylnzyula/sites" target="_blank" >Netlify </a>
-</footer></section>
+</footer>
+</section>
 </body>
 </html>
