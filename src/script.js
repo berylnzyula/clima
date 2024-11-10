@@ -63,7 +63,7 @@ let days = [
     hour = `0${hour}`;
   }
 
-  return ` ${day}, ${hour}:${minutes}`;
+  return ` ${day}, ${hour}:${minutes} ,`;
 
 }
 

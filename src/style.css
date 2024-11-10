@@ -43,29 +43,31 @@ color:#6aeeff
 }
 h1.city-name{
   font-size: 50px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-top: 30px;
+  padding-left: 50px;
+  padding-top: 20px;
   margin: 0px;
-  text-align: center;
-  font-weight: 700;
-  width: 50%;
-}
-p{
-  margin-top: 10px;
-  font-size: 20px;
-  padding: 10px;
-  width: 60%;
-  text-align: center;
-  
-}
-div.weather-info{
-  font-size: 60px;
-  padding-left: 20px;
-  text-align: center;
-  width: 65%;
+  text-align: left;
+  width: 70%;
 
 }
+div.main-weather-info{
+  font-size: 100px;
+    text-align: left;
+    padding-left: 130px;
+    width: 90%;
+
+}
+div.other-weather-info{
+ margin-top: 10px;
+ font-size: 20px;
+ padding: 10px;
+ width: 60%;
+ text-align: justify;
+ line-height: 1.5;
+ padding-left: 50px;
+  
+}
+
 #temp-value{
   font-weight: 600;
   font-size: 80px;
@@ -78,7 +80,7 @@ div.weather-info{
 }
 span#icon{
   position: relative;
-  width: 120px;
+  width: 80px;
   height: 120px;
   top: 20px;
   display: inline-block;
@@ -90,6 +92,6 @@ footer{
   text-align: center;
   font-size: 17px;
 }
-.humidity, .wind-speed{
+#humidity-value, #wind-speed-value, #time{
   font-weight: 600;
 }
