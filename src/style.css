@@ -69,14 +69,19 @@ div.weather-info{
 #temp-value{
   font-weight: 600;
   font-size: 80px;
+  
 }
 #temp-unit{
   font-size: 40px;
   position: relative;
   bottom: 27px;
 }
-#temp-icon{
-  font-size: larger;
+span#icon{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  top: 20px;
+  display: inline-block;
 }
 
 footer{
