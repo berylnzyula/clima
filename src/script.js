@@ -19,12 +19,53 @@ let cityValue = searchInput.value.trim();
  
 function showInfo(response){
   let temp = document.querySelector("#temp-value")
-  console.log(document.querySelector("#temp-value"))
   temp.innerHTML = Math.round(response.data.temperature.current)
-console.log(response.data.temperature.current)
+
 let city = document.querySelector("#city");
 city.innerHTML = (response.data.city);
+
+let condition = document.querySelector(".weather-condition")
+condition.innerHTML= (response.data.condition.description)
+
+let humidity = document.querySelector("#humidity-value")
+humidity.innerHTML = (response.data.temperature.humidity)
+
+let wind = document.querySelector("#wind-speed-value")
+wind.innerHTML = (response.data.wind.speed) 
+
+let time = document.querySelector("#time")
+ let date = new Date(response.data.time * 1000)
+ time.innerHTML = formatDate(date)
 }
+
+
+
+function formatDate(date) {
+let hour = date.getHours();
+let minutes = date.getMinutes();
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+  let day = days[date.getDay()];
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+
+  return ` ${day}, ${hour}:${minutes}`;
+
+}
+
+
+
 
 
 function search(cityValue){
