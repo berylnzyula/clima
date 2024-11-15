@@ -85,14 +85,13 @@ span#icon{
   top: 20px;
   display: inline-block;
 }
-.forecast{
+#forecast{
 display: flex;
 justify-content: space-around;
 margin-top: 30px;
 }
 .forecast-day{
   text-align: center;
-
   font-size: 25px;
   font-weight: 700;
 }

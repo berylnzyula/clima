@@ -66,9 +66,22 @@ let days = [
   return ` ${day}, ${hour}:${minutes} ,`;
 
 }
+function showForecast(){
+let days = ["Mon", "Tue", "Wed", "Thu", "Fri"] ;
+let forecastHtml = "";
 
-
-
+days.forEach(function (day){
+forecastHtml = forecastHtml + 
+`
+  <div class="forecast-day">${day}</div>
+  <div class="forecast-icon">☁</div>
+  <div class="forecast-temperature">20° 10°</div>
+  </div>
+ 
+`
+let forecast = document.querySelector("#forecast");
+forecast.innerHTML = forecastHtml;
+})};
 
 
 function search(cityValue){
@@ -77,3 +90,4 @@ let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${cityValue}&key=
 axios.get(apiUrl).then(showInfo)
 
 } 
+showForecast();
