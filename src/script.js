@@ -45,7 +45,7 @@ let time = document.querySelector("#time")
  time.innerHTML = formatDate(date)
 
  let icon = document.querySelector("#icon")
-    icon.innerHTML = `<img src="${response.data.condition.icon_url}" />`
+    icon.innerHTML = `<img src="${response.data.condition.icon_url}"class="icon" />`
 }
 
 function formatDate(date) {
@@ -86,8 +86,8 @@ response.data.daily.forEach(function (day, index){
 forecastHtml = forecastHtml + 
 `<div class="forecast">
   <div class="forecast-day">${formatDay(day.time)}</div>
-  <div class="forecast-icon"><img src="${day.condition.icon_url}"</div>
-  <div class="forecast-temperature">${Math.round(day.temperature.maximum)}°,  ${Math.round(day.temperature.minimum)} °</div>
+  <div class="forecast-icon"><img src="${day.condition.icon_url}"< /div>
+  <div class="forecast-temperature">${Math.round(day.temperature.maximum)}°   ${Math.round(day.temperature.minimum)}°</div>
   </div>
    </div>
 `
