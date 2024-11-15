@@ -85,7 +85,26 @@ span#icon{
   top: 20px;
   display: inline-block;
 }
+.forecast{
+display: flex;
+justify-content: space-around;
+margin-top: 30px;
+}
+.forecast-day{
+  text-align: center;
 
+  font-size: 25px;
+  font-weight: 700;
+}
+.forecast-icon{
+  padding: 10px 0 ;
+  font-size: 40px;
+  text-align: center;
+}
+.forecast-temperature{
+  font-size: 20px;
+  text-align: center;
+}
 footer{
   padding:10px 30px;
   opacity: 0.8;
